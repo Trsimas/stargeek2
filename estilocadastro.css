@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: "i f";
+}
+
+main{
+    grid-area: i;
+}
+
+main > img{
+    width: 100%;
+    height: 100%;
+}
+
+aside{
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+form > input{
+    border-radius: 10px;
+}
+form > input[type="submit"]{
+    margin-top: 20px;
+
+}
+footer{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 40px;
+    font-size: 2rem;
+}
