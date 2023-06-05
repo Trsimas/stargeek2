@@ -24,6 +24,15 @@ formulario.onsubmit = (evento) =>{
         if (elemento.email == email.value && elemento.senha == senha.value){
             mensagem.innerHTML = "Estou te enviando pro catalogo";
             evento.preventDefault();
+
+        let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
+        dados.push(
+            {
+                email: email.value
+            }
+        )
+        sessionStorage.setItem("logado",JSON.stringify(dados));
+
             setTimeout(()=>{
                 window.location.assign("catalogo.html")
             }, 3000)

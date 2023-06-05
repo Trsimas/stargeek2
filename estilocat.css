@@ -31,25 +31,31 @@ row-gap: 30px;
 justify-content: center;
 align-items: center;
 padding: 20px;
+color: aliceblue;
 }
 .cards{
     display: flex;
     column-gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    color: aliceblue;
 }
 
 .card{
-    background-color: #9747FF;
+    background-color: #000000;
     width: 30%;
+    color: aliceblue;
 }
 .card > img{
     width: 100%;
+    height: 300px;
 }
 .info{
-    background-color: black;
     padding: 20px;
     color: white;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
 }
 footer{
     grid-area: r;

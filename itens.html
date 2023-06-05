@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="estiloitem.css">
     <link rel="stylesheet" href="http://127.0.0.1:5500/index.html">
 </head>
-<body>
+<body>  
     <div class="container">
+
         <main>
             <img src="img/cadastro de itens.png" alt="">
         </main>
+        
         <aside>
-            <form action="catalogo.html">
+            <form>
                <label for="">Nome</label>
-               <input type="text">
+               <input type="text" id="nome">
                <label for="">Resumo</label>
-               <input type="text">
-               <input type="submit" value="ENVIAR">
+               <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+               <input type="file" name="foto" id="foto">
+               <input type="submit" value="ENVIAR" id="btnenviar">
                </form>
                <a href="index.html">encerrar sessão</a>
         </aside>
+
     </div>
+  <script src="itens.js"></script>
 </body>
 </html>
